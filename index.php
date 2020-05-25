@@ -1,9 +1,10 @@
 <?php 
 
-	
 
-$con=mysqli_init(); mysqli_real_connect($con, "servidor-productos2020.mysql.database.azure.com", "adminBD@servidor-productos2020", "IdJDC16051775", "productos", 3306);
-
+$con = mysqli_init (); mysqli_real_connect ( $con ,"bd-productos-iak.mysql.database.azure.com" , "iak@bd-productos-iak" , "irazema16051912." , "Equis" , 3306 );
+if (mysqli_connect_errno($con)) {
+die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
 //Establishes the connection
 
 
